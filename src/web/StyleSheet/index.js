@@ -1,5 +1,6 @@
 const getHairlineWidth = require('./getHairlineWidth');
 const transformToWebStyle = require('./transformToWebStyle');
+const generateCss = require('./generateCss');
 const { reset, registerStyle, getStyle, getClassNames } = require('./registry');
 const init = require('./initialStyles');
 const injector = require('./injector');
@@ -181,6 +182,8 @@ module.exports = {
 
   // TODO(lmr): should this be an internal API or something that we expose?
   resolve,
+
+  generateCss,
 
   reset,
 
